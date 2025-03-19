@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background: rgba(201, 200, 200, 0.438);
+}
+.main{
+    height: 100vh;
+    justify-items: center;
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+}
+.login{
+   padding: 80px 60px;
+   @media (max-width:500px) {
+    width: 100%;
+   }
+   display: block;
+   justify-items: center;
+   /* align-self: center; */
+   background: rgba(161, 160, 160, 0.374);
+  
+}
+.note{font-size: 15px;}
+.login__form{
+    display: block;
+    justify-items: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+.logo{
+    font-size: 40px;
+    @media (max-width:500px) {
+        font-size: 100px;
+    }
+}
+.login__instruction{
+    font-size: 25px;
+    @media (max-width:500px) {
+        font-size: 50px;
+        text-align: center;
+    }
+    font-weight: bold;
+    padding: 10px 0;
+}
+.login__user{
+    background: white;
+    border-radius: 25px;
+    border: none;
+    padding: 15px 8px;
+    
+}
+.input__login{
+    border-radius: 16px;
+    border: none;
+    padding: 8px 10px;
+    @media (max-width:500px) {
+        padding: 20px 10px;
+        font-size: 40px;
+    }
+    margin: 5px;
+    text-align: center;
+}
+.input__login:focus{
+    outline: none;
+}
+.login__pin{
+    background: white;
+    border-radius: 25px;
+    border: none;
+    padding: 15px 8px;
+    margin: 10px 0;
+}
+.btn{
+    background: black;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 60px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn__login{
+    @media (max-width:500px) {
+        font-size: 40px;
+        padding: 30px 60px;
+    }
+}
+.detail{
+    padding-top: 10px;
+    height: 100vh;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    transition: all 3s ease-in;
+    @media (max-width:500px) {
+        display: block;
+        text-align: center;
+    };
+    
+}
+.welcomeMsg{
+    font-size: 25px;
+    justify-items: center;
+    @media (max-width:500px) {
+        justify-content: center;
+    }
+}
+.currentbalance{
+    font-size: 30px;
+    display: flex;
+    @media (max-width:500px) {
+        display: block;
+        font-size: 15px;
+    }
+    justify-content:space-between;
+    gap: 400px;
+}
+.insideAccount{
+    margin: 0;
+    display: flex;
+    @media (max-width:500px) {
+        display: block;
+        justify-content: center;
+        justify-items: center;
+    }
+    gap: 50px;
+    width: 100%;
+}
+.statement{
+    /* grid-row: 2 /span 3; */
+    margin: 0;
+    width: 60%;
+    @media (max-width:500px) {
+        width: 100%;
+    }
+    border-radius: 1px solid;
+    overflow: scroll;
+    max-height: 400px;
+    background: white;
+    border-radius: 16px;
+}
+.statement__row{
+    display: flex;
+    @media (max-width:500px) {
+        flex-wrap: wrap;
+    }
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.392);
+}
+.statement__type--deposit{
+    background: rgb(8, 132, 8);
+    color: white;
+    border-radius: 16px;
+    font-size:10px;
+    padding: 5px 8px;
+}
+.statement__type--withdraw{
+    background: rgb(172, 11, 21);
+    color: white;
+    border-radius: 16px;
+    font-size:10px;
+    padding: 5px 8px;
+}
+.statement__date{
+    color: grey;
+}
+.functionalities{
+    margin: 0;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+    @media (max-width:500px) {
+        width: 80%;
+       justify-items: center;
+       padding: 20px 0;
+    } 
+}
+.transferMoney{
+    color: white;
+    background: linear-gradient(to top left, rgb(61, 57, 57), rgb(26, 25, 25));
+    border-radius: 16px;
+    padding: 40px 25px;
+}
+.requestLoan{
+    color: white;
+    background: linear-gradient(to top left, rgb(61, 57, 57), rgb(194, 21, 21));
+    border-radius: 16px;
+    padding: 40px 15px;
+    margin: 10px 0;
+}
+.closeAccount{
+    color: white;
+    background: linear-gradient(to top left, rgb(61, 57, 57), rgb(16, 133, 53));
+    border-radius: 16px;
+    padding: 40px 15px;
+}
+.forms{
+   display: flex;
+   gap: 5px;
+}
+
+.form__input{
+    width: 100%;
+    border-radius: 16px;
+    border: none;
+    background: rgb(218, 213, 213);
+    padding: 5px 16px;
+}
+.form__input:focus{
+    outline: none;
+}
+.form__btn{
+    border-radius: 16px;
+    padding: 7px;
+}
+.input__requestLoan{
+    width: 40%;
+}
+.hidden{
+    display: none;
+}

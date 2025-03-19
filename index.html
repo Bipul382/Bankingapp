@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+    <div class="login">
+        <h2 class="logo"><i class="bi bi-bank"></i></h2>
+        <h1 class="login__instruction">Login to your Account</h1>
+        <form class="login__form">
+           <div class="name">
+            <input class="input__login input__username" type="text"
+            placeholder="User"
+            class="login__user"/></div>
+            <div class="pin">
+            <input class="input__login input__pin" type="text"
+            placeholder="PIN"
+            class="login__pin"/></div>
+            <button class="btn btn__login">Login</button>
+        
+        </form>
+        <p class="note">(Note: Use username: ba and PIN: 1111 to login)</p>
+    </div>
+</section>
+<section class="detail hidden">
+    <div>
+  <div class="welcomeMsg">
+    <h3></h3>
+  </div>
+  <div class="currentbalance">
+        <h2>Current Balance</h2>
+        <h2 class="balance"></h2>
+</div>
+<div class="insideAccount">
+    <div class="statement">
+        <div class="statement__row">
+            <div class="statement__type statement__type--deposit">2 deposits</div>
+            <div class="statement__date">3 days ago</div>
+            <div class="statement__value">Rs 4000</div>
+        </div>
+        <div class="statement__row">
+            <div class="statement__type statement__type--withdraw">2 withdraw</div>
+            <div class="statement__date">3 days ago</div>
+            <div class="statement__value">Rs 4000</div>
+        </div>
+       
+    </div>
+    <div class="functionalities">
+      <div class="transferMoney">
+        <h2>Transfer Money</h2>
+        <div class="forms formsTransfer">
+          <input class="form__input input__transferUsername" type="text" placeholder="Username"> 
+          <input class="form__input input__transferAmount" type="text" placeholder="Amount">
+          <button class="form__btn btn__transfer"><i class="bi bi-arrow-right"></i></button></div>
+          <!-- <label class="form__label">Transfer to</label>
+          <label class="form__label">Amount</label> -->
+      </div>
+      <div class="requestLoan">
+        <h2>Request Loan</h2>
+        <div class="forms formsLoan">
+          <input class="form__input input__requestLoan" type="text" placeholder="Amount">
+          <!-- <input type="text"> -->
+            <button class="form__btn btn__loan"><i class="bi bi-arrow-right"></i></button>
+            <!-- <label class="form__label">Loan Amount</label> -->
+        </div>
+      </div>
+      <div class="closeAccount">
+        <h2>Close Account</h2>
+        <div class="forms formsClose">
+          <input class="form__input input__closeUsername" type="text" placeholder="Username">
+          <input class="form__input input__closePin" type="text" placeholder="PIN">
+          <button class="form__btn btn__close"><i class="bi bi-arrow-right"></i></button>
+          <!-- <label class="form__label">Username</label>
+          <label class="form__label">PIN</label> -->
+          <!-- </div> -->
+      </div>
+    </div>
+</div>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
